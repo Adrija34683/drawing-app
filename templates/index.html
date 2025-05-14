@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drawing App</title>
+    <style>
+        canvas {
+            border: 2px solid black;
+            background-color: #fffbe6;
+        }
+        .controls {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="drawingCanvas" width="800" height="500"></canvas>
+    <div class="controls">
+        <button id="toggleEraser">Eraser Mode</button>
+        <button id="clearCanvas">Clear</button>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
